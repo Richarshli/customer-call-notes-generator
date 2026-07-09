@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Call Notes Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Customer Call Notes Generator</h1>
+    <p class="subtitle">Create clear, professional call notes for customer service documentation.</p>
+
+    <label>Customer Name</label>
+    <input type="text" id="customerName" placeholder="Enter customer name">
+
+    <label>Reason for Call</label>
+    <textarea id="reason" placeholder="Example: Customer called about account access issue."></textarea>
+
+    <label>Actions Taken</label>
+    <textarea id="actions" placeholder="Example: Verified account, reviewed issue, provided troubleshooting steps."></textarea>
+
+    <label>Resolution / Next Steps</label>
+    <textarea id="resolution" placeholder="Example: Issue resolved and customer confirmed access."></textarea>
+
+    <button onclick="generateNotes()">Generate Call Notes</button>
+
+    <h2>Generated Call Notes</h2>
+    <div id="output" class="output-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
